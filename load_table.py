@@ -7,7 +7,7 @@ client = bigquery.Client()
 table_id = "finance-cloud-team.LAHU.APPLICATION_DATA_21DEC2023"
 
 job_config = bigquery.LoadJobConfig(
-    source_format=bigquery.SourcFormat.CSV,
+    source_format=bigquery.SourceFormat.CSV,
     autodetect=True,
     skip_leading_rows=1
     )
